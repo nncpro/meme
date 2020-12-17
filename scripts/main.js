@@ -61,14 +61,14 @@ btnSave.onclick = function(event){
 function draw(){
     context.clearRect(0,0,canvas.width,canvas.height);
     context.drawImage(image,0,0,canvas.width,canvas.height);
-    context.font="35px Tahoma Bolder";
+    context.font="30px Tahoma Bolder";
     context.fillStyle=top_color;
     // context.strokeStyle="black";
     context.textAlign ="center";
     context.fillText(top_text,canvas.width/2,40);
     // context.strokeText(top_text,canvas.width/2,40);
     context.fillStyle=bottom_color;
-    context.fillText(bottom_text,canvas.width/2,590);
+    context.fillText(bottom_text,canvas.width/2,580);
     // context.strokeText(bottom_text,canvas.width/2,590);
 }
 function setTopColor(event){
