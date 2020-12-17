@@ -1,6 +1,6 @@
 var canvas = document.createElement("canvas");
-canvas.width=480;
-canvas.height=640;
+canvas.width=320;
+canvas.height=480;
 var context = canvas.getContext("2d");
 
 var drawArea = document.querySelector("#draw");
@@ -65,10 +65,10 @@ function draw(){
     context.fillStyle=top_color;
     // context.strokeStyle="black";
     context.textAlign ="center";
-    context.fillText(top_text,canvas.width/2,40);
+    context.fillText(top_text,canvas.width/2,30);
     // context.strokeText(top_text,canvas.width/2,40);
     context.fillStyle=bottom_color;
-    context.fillText(bottom_text,canvas.width/2,580);
+    context.fillText(bottom_text,canvas.width/2,450);
     // context.strokeText(bottom_text,canvas.width/2,590);
 }
 function setTopColor(event){
