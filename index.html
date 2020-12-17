@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chế meme cùng NNC</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div id="draw">
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="editor">
+                <input type="file" name="" id="file" accept="image/*">
+                <input type="text" name="" id="top_line" placeholder="Dòng trên">
+                <div class="color">
+                    <input type="radio" name="top_color" id="" onclick="setTopColor(event)" value="white" checked><span>Trắng</span>
+                    <input type="radio" name="top_color" id="" onclick="setTopColor(event)" value ="black" > <span>Đen</span>
+                </div>
+                <input type="text" name="" id="bottom_line" placeholder="Dòng dưới">
+                <div class="color">
+                    <input type="radio" name="bottom_color" id="" onclick="setBottomColor(event)" value="white" checked> <span>Trắng</span>
+                    <input type="radio" name="bottom_color" id="" onclick="setBottomColor(event)" value ="black" > <span>Đen</span>
+                </div>
+            </div>
+            <div class="controller">
+                <button id="btn">Save</button>
+            </div>
+            <p id="err"></p>
+            <a href="" id="link"></a>
+            
+        </div>
+    </div>
+</body>
+<script src="/scripts/main.js"></script>
+</html>

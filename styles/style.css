@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.left,.right{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.right{
+    flex-shrink: 3;
+    box-shadow: 0 1px 5px lightgray;
+    height: 100%;
+}
+.right, .right .editor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right .controller{
+    width:100%;
+    align-items: center;
+    text-align: center;
+}
+.editor{
+    padding: 0.5rem;
+}
+.editor > input[type="text"]{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input[type="file"]{
+    border: none;
+}
+#btn{
+    padding: 0.2rem 0.5rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#draw{
+    height: 100%;
+}
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+#err{
+    color: red;
+}
+@media screen and (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
