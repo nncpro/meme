@@ -61,7 +61,7 @@ input[type="file"]{
 }
 canvas {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 #err{
     color: red;
@@ -70,5 +70,8 @@ canvas {
     .container{
         display: flex;
         flex-direction: column;
+    }
+    canvas{
+        margin: 0 auto;
     }
 }
