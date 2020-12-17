@@ -61,7 +61,7 @@ btnSave.onclick = function(event){
 function draw(){
     context.clearRect(0,0,canvas.width,canvas.height);
     context.drawImage(image,0,0,canvas.width,canvas.height);
-    context.font="15px Tahoma Bolder";
+    context.font="10px Tahoma Bolder";
     context.fillStyle=top_color;
     // context.strokeStyle="black";
     context.textAlign ="center";
